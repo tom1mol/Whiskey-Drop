@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whiskey Drop | Taste a new whiskey every month</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+</head>
+
+<body>
+    <!--NAV-->
+    <nav class="navbar navbar-default">         <!--had "navbar-fixed-top" in here after default but it didnt suit our layout-->
+        <div class="container-fluid">                    <!-- allows navigation to 100% page width -->
+            <!--Logo-->
+            <div class="navbar-header">
+                <a href="/" class="navbar-brand">
+                    Whiskey Drop
+                </a>
+            </div>
+            
+            <!--Navbar-->
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="">About</a></li>
+                <li class="visible-xs"><a href="">Sign In</a></li>   <!--only appears on mobile devices-->
+            </ul>
+            
+            
+            <!--Message-->
+            <div class="navbar-header navbar-right hidden-xs">  <!-- moves this section to right of naavbar. -->
+                                                                <!--hidden-xs moves signup into regular menu on smaller resolutions-->
+                <a href="/login" class='btn btn-default navbar-btn'>Sign Up</a>
+                <p class="navbar-text"><i>Great whiskey delivered to your door</i></p>
+            </div>
+        </div>
+    </nav>
+    <article class="container">
+        <!--Alert-->
+        <div class="row hidden-xs">   <!--hidden on mobile-->
+            <div class="col-xs-12">
+                <div class="alert alert-warning">       <!--div.alert.alert-warning-->
+                    <strong>Sale Now On!</strong> We've got a sale on. Get a 12 month
+                    subscription for the price of 6! <a href="">See here for more details</a>
+                </div>
+            </div>
+        </div>
+            
+        <!-- Callout -->
+        <div class="row">
+          <div class="col-xs-12">
+            <section class="callout jumbotron text-center">   <!-- JUMBOTRON makes callout section stand out and text-centre centres the jumbotron text-->
+                <h1>The finest whiskeys delivered to your doorstep.</h1>
+                <p class="lead">Sign up today to start receiving the world's best whiskeys every month. <s class="hidden-xs">£19.99</s> <span class="visible-xs"><br></span><strong><mark>First one is free!</mark></strong> </p>
+                <!-- <mark> tag highlights text and <strong> is bold-->
+                <!-- <s> tag is strike through -->
+                <p><button class="btn btn-lg btn-success">Sign up</button></p>
+                <!-- btn-lg makes button large-->
+                <!-- btn-success makes it stand out -->
+
+                <p class="text-muted"><small>You must be over 18 to sign up to our service. Please drink responsibly</small></p>
+                <!-- <small> tag is small print and class="text-muted" makes it lighter in colour -->
+
+            </section>
+          </div>
+        </div>
+        <!-- /.callout -->
+        
+
+        <!-- Quotes -->
+        <section class="quotes">
+            <div class="row">
+                <div class="col-xs-12">
+                  <div class="page-header">
+                      <h2 class="text-uppercase">Quotes:</h2>
+                                                   <!-- capitalised by class="text-uppercase"-->
+                   </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-6">   <!-- occupy half the row---col-md-6 -->
+                    <div class="media">
+                        <div class="media-left hidden-xs">              <!--hidden on mobile-->
+                            <img src="images/girl-image.jpg" class="img-circle media-object" height=100 width=100>
+                        </div>
+                        <div class="media-body">         <!-- contains the quote-->
+                         <blockquote class="quote">
+                            <p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
+                            <p>- Jane Doe</p>  <!--<footer>Jane Doe on <cite title="Twitter">Twitter</cite></footer>  -->
+                         </blockquote>   
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-xs-12 col-md-6">    <!-- occupy half the row--col-md-6 -->
+                    <div class="media">
+                        <div class="media-left hidden-xs">          <!--hidden on mobile-->
+                            <img src="images/guy.jpeg" class="img-circle media-object" height=100 width=100>  <!-- img-circle is bootstrap finish 4 pic-->
+                        </div>
+                        <div class="media-body">
+                            <blockquote class="quote">           <!-- contains the quote-->
+                                <p>I haven't been sober for months!</p>
+                                <p>- Jane Doe</p>   <!--<footer>Jane Doe on <cite title="Twitter">Twitter</cite></footer>  -->
+                            </blockquote>
+                                    <!-- <blockquote> improves the quote visually and semantically -->
+                    
+                        </div>
+                    </div>                
+                </div>
+            </div>
+        </section>
+        <!-- /.quotes -->
+        
+
+        <!-- Features -->
+        <section class="features">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="page-header">
+                        <h2 class="text-uppercase">Features:</h2>
+                                                             <!-- capitalised -->
+                    </div>
+                </div>     
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-6 col-lg-4">           <!-- occupy half the row on medium devices---col-md-6 -->
+                                                                    <!-- occupt third of row on large devices ---col-lg-4 -->
+                  <div class="feature">
+                    <h3><span class="glyphicon glyphicon-gift hidden-xs"></span>Feature 1 <span class="label label-success">New!</span></h3>
+                                                                                  <!--<span class="label label-success">New!</span>..creates highlighted NEW-->                  
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                    <p><a class="btn btn-sm btn-default" href="">Read More</a></p>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-4">            <!-- occupy half the row---col-md-6 -->
+                                                                     <!-- occupt third of row on large devices ---col-lg-4 -->
+                    <div class="feature">
+                        <h3><span class="glyphicon glyphicon-credit-card hidden-xs"></span>Feature 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                        <p><a class="btn btn-sm btn-default" href="">Read More</a></p>
+                    </div>
+                </div>
+                <div class="col-xs-12 hidden-md col-lg-4">           <!-- hidden-md --hidden only on medium devices-->
+                                                                     <!-- occupt third of row on large devices ---col-lg-4 -->
+                        <div class="feature">
+                            <h3><span class="glyphicon glyphicon-remove-sign hidden-xs"></span>Feature 3</h3> <!--glyphicon glyphicon-gift...taken from bootstrap icons page-->
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                            <p><a class="btn btn-sm btn-default" href="">Read More</a></p>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- /.table -->
+
+        <section class="Monthly Favorites">
+            <h2 class="text-uppercase">Monthly Favorites:</h2>
+            <!-- capitalised -->
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">NAME</th>
+                        <th scope="col">ORIGIN</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jameson</td>
+                        <td>Ireland</td>
+
+                    </tr>
+                    <tr>
+                        <td>Paddy</td>
+                        <td>Ireland</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Haig</td>
+                        <td>Scotland</td>
+                    </tr>
+
+                    <tr>
+                        <td>Powers</td>
+                        <td>Ireland</td>
+                    </tr>
+
+                    <tr>
+                        <td>Bushmills</td>
+                        <td>Ireland</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+    </article>
+</body>
+
+</html>
