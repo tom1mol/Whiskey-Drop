@@ -1,0 +1,39 @@
+ <!--NAV-->
+    <nav class="navbar navbar-default">         <!--had "navbar-fixed-top" in here after default but it didnt suit our layout-->
+        <div class="container-fluid">                    <!-- allows navigation to 100% page width -->
+            <!--Logo-->
+            <div class="navbar-header">
+                <a href="/" class="navbar-brand">
+                    Whiskey Drop
+                </a>
+            </div>
+            
+            <!--Navbar-->
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="">About</a></li>
+                <li class="visible-xs"><a href="">Sign In</a></li>   <!--only appears on mobile devices-->
+            </ul>
+            
+            
+            <!--Message-->
+            <div class="navbar-header navbar-right hidden-xs">  <!-- moves this section to right of naavbar. -->
+                                                                <!--hidden-xs moves signup into regular menu on smaller resolutions-->
+                <a href="/login" class='btn btn-default navbar-btn'>Sign Up</a>
+                <p class="navbar-text"><i>Great whiskey delivered to your door</i></p>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container alert-container">
+        <!--Alert-->
+        <div class="row hidden-xs">   <!--hidden on mobile-->
+            <div class="col-xs-12">
+                <div class="alert alert-warning">       <!--div.alert.alert-warning-->
+                    <strong>Sale Now On!</strong> We've got a sale on. Get a 12 month
+                    subscription for the price of 6! <a href="">See here for more details</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
